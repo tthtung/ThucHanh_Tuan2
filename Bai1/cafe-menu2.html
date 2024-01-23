@@ -10,7 +10,7 @@
             padding: 0px;    
         }
         .wrapper{
-            height: 450px;
+            height: 630px;
             width: 900px;
             border: 1px solid pink;
         }
@@ -30,9 +30,11 @@
             height: 50px;
             width: 900px;
             border-bottom: 1px solid greenyellow;
+            text-align: center;
+            background-color: pink;
         }
         .nav .btn{
-            text-align: center;
+            /* text-align: center; */
             padding: 15px;
         }
         .menu li{
@@ -50,14 +52,22 @@
         li a{
             text-decoration: none;
         }
-        .content ul{
-            margin-left: 50px;
+        .content{
+            width: 900px;
+            padding-top: 10px;
+        }
+        .content .center ul{
+            margin-left: 100px;
         }
         .content h2{
-            background-color: bisque;
+            height: 25px;
+            width: 400px;
+            
+            background-color: pink;
             color: red;
         }
         .content a{
+            margin-left: 50px;
             font-weight: bold;
             color: red;
         }
@@ -67,6 +77,38 @@
         .content ul li b{
             color: yellow;
         }
+        .left{
+            width: 20%;
+            float: left;
+            padding-left: 0px;
+        }
+        .left .sub-menu{
+            list-style-type: none;
+            padding:2px auto;
+        }
+        .left .sub-menu li{
+            background-color: pink;
+            border-radius: 100px;
+        }
+        .center{
+            width: 60%;
+            float: left;
+        }
+        .right{
+            width: 20%;
+            float: left;
+            background-color: black;
+        }
+        form{
+            margin-left: 50px;
+        }
+        .clear{
+            clear: both;
+        }
+        .footer{
+            text-align: center;
+            background-color: pink;
+        }
     </style>
 </head>
 <body>
@@ -75,6 +117,7 @@
             <h1><i>EXAMPLE CAFE MENU</i></h1>
         </div>
         <div class="nav">
+            <img src="./icons8-home-50.png" height="30px" align="left">
                 <ul class="menu">
                     <li><a href="#">Starter</a></li>
                     <li><a href="#">Main Courses</a></li>
@@ -86,7 +129,18 @@
                 </div>
         </div>
         <div class="content">
-            <h2>Starter</h2>
+            <div class="left">
+                <ul class="sub-menu">
+                    <li><a href="#">Cafe Latte</a></li> <br>
+                    <li><a href="#">Capuchino</a></li> <br>
+                    <li><a href="#">Ocean Blue</a></li> <br>
+                    <li><a href="#">Ice-cream Cafe</a></li> <br>
+                    <li><a href="#">Order Online</a></li> <br>
+                    <img src="./company.png" width="100%" style="border-radius: 100px;">
+                </ul>
+            </div>
+            <div class="center">
+                <h2>Starter</h2>
             <ul>
                 <li>Chesnut and Mushroom Goujons <span>(<u>v</u>)</span></li>
                 <li>Goat Cheese<span>(<u>v</u>)</span></li>
@@ -102,8 +156,42 @@
                 <li>Selection of fine Cheese from Around the World<span>(<u>v</u>)</span></li>
             </ul>
             <a href="#">Back to Top</a>
+            <h2>I N F O R M A T I O N</h2> <br>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name"> <br>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Telephone"> <br>
+                <select>
+                    <option value="1">USA</option>
+                    <option value="2">VN</option>
+                </select>
+                <input type="radio" name="re">Vietnamese
+                <input type="radio" name="re">Foreigner <br>
+                <textarea name="" id="" cols="50" rows="5" placeholder="Comment"></textarea>
+                <div class="btn">
+                    <button>Submit</button>
+                    <button>Cancel</button>
+                </div>
+            </form>
+            </div>
+            <div class="right">
+                <h3 style="color: white;">Envents</h3>
+                <div class="content" style="width: 80%; text-align: center;">
+                    <h4 style="color: white;">Regular Meetings</h4>
+                    <img src="./meeting.png" alt="" width="100%">
+                    <h4 style="color: white;">Product Launches</h4>
+                    <img src="./launch.png" alt="" width="100%">
+                </div>
+                    
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="clear">
+
+        </div>
+        <div class="footer">
+            <h2 style="color: white;"><i>ABC Company <sup>®</sup>  - 12345678 - abccoffee@gmail.com</i></h2>
+        </div>
     </div>
 </body>
 </html>
